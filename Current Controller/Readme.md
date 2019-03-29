@@ -1,12 +1,7 @@
 # Current Controller
 
-Regulates a moderate current (~ 5-10 A) flowing through a device using a Darlington transistor  
-Connect power supply -> device -> current controller -> shunt resistor (1 Ohm?) -> ground  
-  
-The input voltage on the BNC connector is the voltage the board tries to keep across the shunt resistor (-> 1A / V for a 1 Ohm resistor)
+Regulates a current < 10 A with a Darlington transistor, measuring the current across a 1 Ohm shunt resistor -> 1V = 1A
   
 C3 can be used to limit the control bandwidth, C4 can be increased to make circuit stable if oscillating.
 
-Appears to be stable for inductive loads of up to 1 mH (and maybe higher).  
-
-Some space around the Darlington is left free to allow for the installation of a heatsink.
+Appears to be stable for inductive loads of up to 1 mH (and maybe higher). 
